@@ -1,0 +1,6 @@
+digraph {
+html -> {head body}
+head -> {title meta}
+body -> {p a i b img}
+img -> {_src, _img}
+}

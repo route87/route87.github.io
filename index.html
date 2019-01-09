@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>MVP HTML</title>
+	</head>
 <body>
+	<h1 id="top">HTML Tags</h1>
+	<h2>Text</h2>
+	<p>
+		This should be <b>bold</b>.
+		This should be <i>italic</i>
+		E = MC<sup>2</sup>
+		This is H<sub>2</sub>O
+		Line break coming <br/>
+		Horizontal line coming <hr/>
+		<blockquote site="300 Movie">This is Sparta!</blockquote>
+		This is quote from Einstine <q>Make things simpler</q>
+		This text <s>will be striked</s>
+		This text <ins>will be inserted</ins>
+	</p>
+	<h2 id="list">List</h2>
+	<p>
+		Here is ordered list.
+		<ol>
+			<li>List item one</li>
+			<li>List item two</li>
+		</ol>
+		Here is un ordered list.
+		<ul>
+			<li>Make three bullet points</li>
+			<li>It is rememberable</li>
+			<li>Thats how mind works</li>
+		</ul>
+		Here is nested ordered list
+		<ol>
+			<li>Root</li>
+			<ol>
+				<li>One</li>
+				<li>Two</li>
+			</ol>
+		</ol>
+	</p>
+	<h2 id="images">Images</h2>
+	<img src="images/svg_demo.svg" alt="graph of nodes" title="node graph" height="100" width="100" />
+	<figure>
+		<img src="images/html_tags.svg" alt="html tag tree" title="HTML Tags" height="200" width="200"/>
+		<br/>
+		<figcaption>HTML Tag Tree</figcaption>
+	</figure>
+	<h2>Table and Escape Chars</h2>
+	<table>
+		<tr> <th>Code</th> <th>Symbol</th> </tr>
+		<tr> <td>lt</td> <td>&lt;</td> </tr>
+		<tr> <td>gt</td> <td>&gt;</td> </tr>
+		<tr> <td>amp</td> <td>&amp;</td> </tr>
+		<tr> <td>copy</td> <td>&copy;</td> </tr>
+		<tr> <td>trade</td> <td>&trade;</td> </tr>
+		<tr> <td>times</td> <td>&times;</td> </tr>
+		<tr> <td>divide</td> <td>&divide;</td> </tr>
+		<tr> <td>lsquo</td> <td>&lsquo;</td> </tr>
+		<tr> <td>rsquo</td> <td>&rsquo;</td> </tr>
+		<tr> <td>ldquo</td> <td>&ldquo;</td> </tr>
+		<tr> <td>rdquo</td> <td>&rdquo;</td></tr>
+	</table>
 
-<h1>Hello</h1>
+	<p>Table with spans</p>
+	<table border="true">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td colspan="2">1_2</td>
+			<td rowspan="2">3_3</td>
+		</tr>
+		<tr>
+			<td>1</td>
+		</tr>
+	</table>
+	<h2>Hyper links</h2>
+	<p>Go to <a href="#top">top</a>. Go to new tab for <a href="#list" target="_blank">list</a>.</p>
 
-<p>Hello World!</p>
-
+	<h2>Definitions</h2>
+	<dfn>
+		<dt>List</dt>
+		<dd>The html lists. Defined <a href="#list">here</a></dd>
+		<dt>Images</dt>
+		<dd>The html images. Defined <a href="#images">here</a></dd>
+	</dfn>
 </body>
 </html>
-
